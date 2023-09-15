@@ -3,6 +3,7 @@ import 'package:flutter1/Screens/Columns/buttonsampleeg2.dart';
 import 'package:flutter1/Screens/Columns/columnegone.dart';
 import 'package:flutter1/Screens/Columns/rowegone.dart';
 import 'package:flutter1/Screens/Columns/textfield.dart';
+import 'package:flutter1/Screens/calculatordesign.dart';
 import 'package:flutter1/Screens/centerwidget.dart';
 import 'package:flutter1/Screens/checkboxeg1.dart';
 import 'package:flutter1/Screens/columnwidget.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:ButtonSampleEgtwo(),
+      home:CalculatorSample(),
     );
   }
 }
