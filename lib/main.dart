@@ -15,6 +15,9 @@ import 'package:flutter1/Screens/iconsample.dart';
 import 'package:flutter1/Screens/imageflutter.dart';
 import 'package:flutter1/Screens/networkimg.dart';
 import 'package:flutter1/Screens/popupmenu.dart';
+import 'package:flutter1/Screens/quizappeg1.dart';
+import 'package:flutter1/Screens/quizappeg2.dart';
+import 'package:flutter1/Screens/quizappeg3.dart';
 import 'package:flutter1/Screens/radiobutton.dart';
 import 'package:flutter1/Screens/second_screen.dart';
 import 'package:flutter1/Screens/textsample.dart';
@@ -28,7 +31,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:CalculatorSample(),
+      home:QuizSampleEgthree(),
     );
   }
 }
