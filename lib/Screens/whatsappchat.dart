@@ -13,10 +13,14 @@ class _WhatsAppSampleState extends State<WhatsAppSample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("whatsapp",),backgroundColor: Colors.green,),
-      body: ListView.builder(itemCount: name.length,itemBuilder: (context, index) {
+      body: ListView.builder(itemCount: name.length,
+        itemBuilder: (context, index) {
         return ListTile(
           subtitle: Text(message[index]),
-          leading: CircleAvatar(),
+          leading: CircleAvatar(
+            radius: 30,
+              backgroundImage:NetworkImage("") ,
+          ),
           title: Text(name[index]),
         );
 
