@@ -11,7 +11,8 @@ class _CalculatorSampleState extends State<CalculatorSample> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text('calculator'),
+        title: Text('calculator',
+        style: TextStyle(color: Colors.pinkAccent),),
       ),
       body: Column(
         children: [
