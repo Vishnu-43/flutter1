@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter1/Screens/Assignment/assignment_q1.dart';
+import 'package:flutter1/Screens/Assignment/assignment_q2.dart';
 import 'package:flutter1/Screens/Columns/buttonsampleeg2.dart';
 import 'package:flutter1/Screens/Columns/columnegone.dart';
 import 'package:flutter1/Screens/Columns/rowegone.dart';
@@ -24,6 +26,7 @@ import 'package:flutter1/Screens/quizappeg2.dart';
 import 'package:flutter1/Screens/quizappeg3.dart';
 import 'package:flutter1/Screens/radiobutton.dart';
 import 'package:flutter1/Screens/second_screen.dart';
+import 'package:flutter1/Screens/tabbar.dart';
 import 'package:flutter1/Screens/textsample.dart';
 import 'package:flutter1/Screens/whatsappchat.dart';
 
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:AlertSampleOne()
+      home:TabBarSample()
     );
   }
 }
