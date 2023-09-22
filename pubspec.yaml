@@ -63,6 +63,8 @@ flutter:
   assets:
      - assets/images/flutter.jpeg
      - assets/images/Naruto.jpeg
+     - assets/images/whatsapp3.jpeg
+     - assets/images/whatsapp4.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

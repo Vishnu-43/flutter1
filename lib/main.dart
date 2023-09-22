@@ -29,6 +29,7 @@ import 'package:flutter1/Screens/second_screen.dart';
 import 'package:flutter1/Screens/tabbar.dart';
 import 'package:flutter1/Screens/textsample.dart';
 import 'package:flutter1/Screens/whatsappchat.dart';
+import 'package:flutter1/Whatsappclone/splashscreen.dart';
 
 void main(){
   runApp(MyApp());
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:TabBarSample()
+      home:SplashScreenWhats()
     );
   }
 }
