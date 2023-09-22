@@ -15,6 +15,7 @@ import 'package:flutter1/Screens/drawer.dart';
 import 'package:flutter1/Screens/formexample2.dart';
 import 'package:flutter1/Screens/formsample.dart';
 import 'package:flutter1/Screens/gesturesample.dart';
+import 'package:flutter1/Screens/gridview.dart';
 import 'package:flutter1/Screens/iconsample.dart';
 import 'package:flutter1/Screens/imageflutter.dart';
 import 'package:flutter1/Screens/listviewsample.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:SplashScreenWhats()
+      home:GridViewSampleEg()
     );
   }
 }
