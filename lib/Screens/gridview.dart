@@ -15,7 +15,7 @@ class _GridViewSampleEgState extends State<GridViewSampleEg> {
         const Text("Grid view"),),
       body: GridView(gridDelegate:
 
-          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
+          const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
           mainAxisSpacing: 16,
           crossAxisSpacing: 16),
 

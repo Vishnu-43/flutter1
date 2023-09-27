@@ -5,6 +5,9 @@ import 'package:flutter1/Screens/Columns/buttonsampleeg2.dart';
 import 'package:flutter1/Screens/Columns/columnegone.dart';
 import 'package:flutter1/Screens/Columns/rowegone.dart';
 import 'package:flutter1/Screens/Columns/textfield.dart';
+import 'package:flutter1/Screens/Provider/counter_pg.dart';
+import 'package:flutter1/Screens/Provider/homepage.dart';
+import 'package:flutter1/Screens/Provider/notifier_pg.dart';
 import 'package:flutter1/Screens/alertdialog.dart';
 import 'package:flutter1/Screens/calculatordesign.dart';
 import 'package:flutter1/Screens/centerwidget.dart';
@@ -30,7 +33,9 @@ import 'package:flutter1/Screens/second_screen.dart';
 import 'package:flutter1/Screens/tabbar.dart';
 import 'package:flutter1/Screens/textsample.dart';
 import 'package:flutter1/Screens/whatsappchat.dart';
-import 'package:flutter1/Whatsappclone/splashscreen.dart';
+import 'package:flutter1/Whatsappclone/whatsapphome.dart';
+import 'package:flutter1/Whatsappclone/whatsappsplash.dart';
+import 'package:provider/provider.dart';
 
 void main(){
   runApp(MyApp());
@@ -40,9 +45,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home:GridViewSampleEg()
-    );
+    return MaterialApp(
+      title: 'Flutter provider Demo',
+        home:MyHomePage()
+      ),
   }
 }
 
