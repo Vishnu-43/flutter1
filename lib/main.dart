@@ -1,26 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter1/sharedpreference/homepage.dart';
-import 'package:flutter1/sharedpreference/loginpage.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter1/Screens/Speechtotext/speechtotext.dart';
+import 'package:flutter1/Screens/Table/table_sample.dart';
+import 'package:flutter1/Screens/Texttospeech/texttospeech.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
-  runApp(MyApp(isLoggedIn: isLoggedIn));
+void main(){
+  runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
-  final bool isLoggedIn;
-  MyApp({required this.isLoggedIn});
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        '/loginpage': (context) => Login1(),
-        '/homepage': (context) => Home(),
-      },
-      initialRoute: isLoggedIn ? '/homepage' : '/loginpage',
+      home: TableSample(),
     );
   }
 }

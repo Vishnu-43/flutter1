@@ -38,6 +38,8 @@ dependencies:
   url_launcher: ^6.1.14
   provider: ^6.0.5
   shared_preferences: ^2.2.1
+  flutter_tts: ^3.8.3
+  speech_to_text: ^6.3.0
 
 dev_dependencies:
   flutter_test:
