@@ -14,9 +14,9 @@ class SettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: NavbarSample(),
+      bottomNavigationBar: NavBar(),
       appBar: AppBar(
-        title: Text('Change Account details')),
+          title: Text('Change Account details')),
       body: Center(
         child: Container(
           padding: EdgeInsets.symmetric(vertical: 20,horizontal: 30),
@@ -27,7 +27,7 @@ class SettingScreen extends StatelessWidget {
                 children: <Widget>[
                   TextFormField(
                     decoration: InputDecoration(labelText: 'Name'),
-                      onSaved: (input)=>data['name']=input,
+                    onSaved: (input)=>data['name']=input,
                   ),
                   TextFormField(
                     decoration: InputDecoration(labelText: 'Email'),
