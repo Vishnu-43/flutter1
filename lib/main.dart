@@ -13,6 +13,7 @@ import 'package:flutter1/Screens/Table/table_sample.dart';
 import 'package:flutter1/Screens/Table/table_sample2.dart';
 import 'package:flutter1/Screens/Texttospeech/texttospeech.dart';
 import 'package:flutter1/Screens/Toastnotification/toastnotification.dart';
+import 'package:flutter1/Screens/VideoPlayer/videoplay.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: ToastSample1()
+      home: VideoPlaySample()
       // routes: {
       //   'accountscreen':(context)=>AccountScreen(),
       //   'settingscreen':(context)=>SettingScreen(),
