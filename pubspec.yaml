@@ -78,6 +78,11 @@ flutter:
      - assets/images/whatsapp3.jpeg
      - assets/images/whatsapp4.jpeg
      - assets/images/meta_logo.png
+     - assets/images/googlepay.png
+     - assets/images/Transparentgpay.png
+     - assets/images/amazonpay.png
+     - assets/images/creditcartlogo.png
+     - assets/images/cashondelivery.png
 
      -
   #   - images/a_dot_ham.jpeg

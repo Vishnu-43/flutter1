@@ -60,7 +60,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                               value: 1,
                               groupValue: _type,
                               onChanged: _handleRadio,
-                              activeColor: Colors.cyan,
+                              activeColor: Colors.deepOrange,
                             ),
                             Text(
                               "Amason pay",
@@ -68,7 +68,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                                   ? TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
-                                      color: Colors.cyan)
+                                      color: Colors.deepOrange)
                                   : TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
@@ -77,8 +77,8 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20,right: 10,bottom: 10,top: 20),
-                          child: Image(image: AssetImage('assets/images/googlepay.png')
+                          padding: const EdgeInsets.only(left: 20,right: 10,bottom: 12,top: 20),
+                          child: Image(image: AssetImage('assets/images/amazonpay.png'),width: 95,fit: BoxFit.fitWidth ,
                           ),
                         ),
                       ],
@@ -103,7 +103,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                   padding: const EdgeInsets.only(right: 20),
                   child: Center(
                     child: Row(
-                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Row(
@@ -112,7 +112,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                               value: 2,
                               groupValue: _type,
                               onChanged: _handleRadio,
-                              activeColor: Colors.cyan,
+                              activeColor: Colors.deepOrange,
                             ),
                             Text(
                               "Credit Card",
@@ -120,7 +120,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                                   ? TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
-                                      color: Colors.cyan)
+                                      color: Colors.deepOrange)
                                   : TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
@@ -128,9 +128,9 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                             ),
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20,right: 10,bottom: 10,top: 20),
-                          child: Image(image: AssetImage('assets/images/googlepay.png')
+                        const Padding(
+                          padding: EdgeInsets.only(left: 130,right: 10,bottom: 10,top: 20),
+                          child: Image(image: AssetImage('assets/images/creditcartlogo.png'),width: 100,
                           ),
                         ),
                       ],
@@ -164,7 +164,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                               value: 3,
                               groupValue: _type,
                               onChanged: _handleRadio,
-                              activeColor: Colors.cyan,
+                              activeColor: Colors.deepOrange,
                             ),
                             Text(
                               "Google pay",
@@ -172,7 +172,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                                   ? TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
-                                      color: Colors.cyan)
+                                      color: Colors.deepOrange)
                                   : TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
@@ -180,9 +180,61 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                             ),
                           ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20,right: 10,bottom: 10,top: 20),
-                          child: Image(image: AssetImage('assets/images/googlepay.png')
+                        const Padding(
+                          padding: EdgeInsets.only(left: 20,right: 20,bottom: 10,top: 20),
+                          child: Image(image: AssetImage('assets/images/Transparentgpay.png'),width: 50,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Container(
+                width: size.width,
+                height: 55,
+                decoration: BoxDecoration(
+                  border: _type == 4
+                      ? Border.all(width: 1, color: Colors.black)
+                      : Border.all(width: 0.3, color: Colors.grey),
+                  borderRadius: BorderRadius.circular(5),
+                  color: Colors.transparent,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 20),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Row(
+                          children: [
+                            Radio(
+                              value: 4,
+                              groupValue: _type,
+                              onChanged: _handleRadio,
+                              activeColor: Colors.deepOrange,
+                            ),
+                            Text(
+                              "Cash on delivery ",
+                              style: _type == 4
+                                  ? const TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.deepOrange)
+                                  : TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black),
+                            ),
+                          ],
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 30,right: 20,bottom: 10,top: 20),
+                          child: Image(image: AssetImage('assets/images/cashondelivery.png'),width: 70,
                           ),
                         ),
                       ],
