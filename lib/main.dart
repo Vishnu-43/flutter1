@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter1/Animation/animation1.dart';
+import 'package:flutter1/Physicsanimation/physicsanimation1.dart';
 import 'package:flutter1/Screens/Profile_page/payment_screen.dart';
 import 'package:flutter1/Screens/Profile_page/profie_page.dart';
 import 'package:flutter1/Screens/Table/productdetils.dart';
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:PaymentMethodScreen(),
+      home:PhysicsCardDragDemo(),
     );
   }
 }
